@@ -1,0 +1,27 @@
+package movable;
+
+/**
+ * Created by Paulius on 2017.09.18.
+ */
+public class Organism implements Movable {
+
+    private int x;
+    private int y;
+
+    public Organism(int x, int y){
+        this.x = x;
+        this.y = y;
+    }
+
+    public String toString(){
+        return "x: " + this.x + "; y: " + this.y;
+    }
+
+    @Override
+    public void move(int dx, int dy) {
+        this.x += dx;
+        this.y += dy;
+    }
+
+
+}
